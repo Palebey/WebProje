@@ -8,9 +8,9 @@
     <title>Login</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #0061fd;" > 
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff00ff;" > 
         <div class="container">
-          <a class="navbar-brand"  href="giris.html">Mert BAYIR </a>
+          <a class="navbar-brand"  href="giris.html">Akif Emre YAMAN </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -20,13 +20,13 @@
                 <a class="nav-link" href="hakkımda.html">Hakkımda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ozgecmis.html">Özgeçmişim</a>
+                <a class="nav-link" href="biyografi.html">biyografi</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="sehrim.html">Şehrim</a>
+                <a class="nav-link" href="memleketim.html">memleketim</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a>
+                <a class="nav-link" href="hobilerim.html">Hobilerim</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="login.html"> Login </a>

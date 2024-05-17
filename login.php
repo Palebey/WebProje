@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1ad194;" > 
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ff00ff;" > 
     <div class="container">
-      <a class="navbar-brand" href="giris.html">Mert BAYIR </a>
+      <a class="navbar-brand" href="giris.html">Akif Emre YAMAN </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto me-2">
           <li class="nav-item">
-            <a class="nav-link" href="hakkımda.html">Hakkımda</a>
+            <a class="nav-link" href="hakkımda.html">hakkımda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ozgecmis.html">Özgeçmişim</a>
+            <a class="nav-link" href="biyografi.html">biyografi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="sehrim.html">Şehrim</a>
+            <a class="nav-link" href="memleketim.html">memleketim</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ilgialanlari.html">İlgi Alanlarım</a>
+            <a class="nav-link" href="hobilerim.html">Hobilerim</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="login.html"> Login </a>
@@ -48,11 +48,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sifre = $_POST["sifre"];
 
    
-    if ($kullaniciAdi == "B221210040" && $sifre == "123456") 
+    if ($kullaniciAdi == "akif.yaman@ogr.sakarya.edu.tr" && $sifre == "B221210003") 
     { 
         echo("Hoşgeldiniz... <br>");
-        echo("Kullanıcı Adı : B221210040 <br>");
-        echo("Şifre : 123456 <br>");
+        echo("Kullanıcı Adı : akif.yaman@ogr.sakarya.edu.tr <br>");
+        echo("Şifre : B221210003 <br>");
         header("refresh:3 ; url= giris.html");
         exit();
     } else {
