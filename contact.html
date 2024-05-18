@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+</head>
+<body>
+    <div id="app" class="container mt-5">
+        <h1 class="mb-4">İletişim Formu</h1>
+        <form @submit.prevent="handleSubmit">
+            <div class="form-group">
+                <label for="name">Adınız</label>
+                <input type="text" class="form-control" id="name" v-model="formData.name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email adresiniz</label>
+                <input type="email" class="form-control" id="email" v-model="formData.email">
+            </div>
+            <div class="form-group">
+                <label for="message">Mesajınız</label>
+                <textarea class="form-control" id="message" v-model="formData.message"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="subject">Konu</label>
+                <select class="form-control" id="subject" v-model="formData.subject">
+                    <option value="" disabled selected>Seçiniz</option>
+                    <option>Genel</option>
+                    <option>Destek</option>
+                    <option>Satış</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Gönder</button>
+            <button type="button" class="btn btn-secondary" @click="resetForm">Temizle</button>
+        </form>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                formData: {
+                    name: '',
+                    email: '',
+                    message: '',
+                    subject: ''
+                }
+            },
+            methods: {
+                handleSubmit() {
+                    if (this.validateForm()) {
+                        localStorage.setItem('formData', JSON.stringify(this.formData));
+                        window.location.href = 'form-data.html';
+                    }
+                },
+                resetForm() {
+                    this.formData = {
+                        name: '',
+                        email: '',
+                        message: '',
+                        subject: ''
+                    };
+                },
+                validateForm() {
+                    if (!this.formData.name) {
+                        alert('Adınızı giriniz.');
+                        return false;
+                    }
+                    if (!this.formData.email || !this.validateEmail(this.formData.email)) {
+                        alert('Geçerli bir email adresi giriniz.');
+                        return false;
+                    }
+                    if (!this.formData.message) {
+                        alert('Mesajınızı giriniz.');
+                        return false;
+                    }
+                    if (!this.formData.subject) {
+                        alert('Bir konu seçiniz.');
+                        return false;
+                    }
+                    return true;
+                },
+                validateEmail(email) {
+                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return re.test(email);
+                }
+            }
+        });
+    </script>
+</body>
+</html>

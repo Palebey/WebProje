@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Özgeçmiş</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f5f5f5; /* Light background for contrast */
+        }
+        .navbar {
+            background-color: #2c3e50; /* Matte blue for the navbar */
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important; /* White text for the navbar links */
+        }
+        .header {
+            background-color: #34495e; /* Darker blue for the header */
+            color: #fff;
+        }
+        .header h1 {
+            color: #fff;
+        }
+        .container h2, .container h3 {
+            color: #2c3e50; /* Consistent blue color for headings */
+        }
+        .card {
+            border: none;
+        }
+        .card-title {
+            color: #2c3e50;
+        }
+        .card-text {
+            color: #34495e;
+        }
+        .footer {
+            background-color: #2c3e50; /* Matte blue for the footer */
+            color: #fff;
+        }
+        a {
+            color: #2c3e50; /* Blue color for links */
+        }
+        a:hover {
+            color: #34495e; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="about.html">Akif Emre YAMAN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Hakkında</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="cv.html">Özgeçmiş</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="city.html">Şehrim - Sivas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="team.html">Mirasımız</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="interests.html">İlgi Alanlarım</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">İletişim</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header text-white text-center py-5 mb-4">
+        <div class="container">
+            <h1 class="font-weight-light">Özgeçmiş</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mb-5">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="img/karisdankendim.jpg" class="img-fluid rounded-circle mb-3" alt="Akif Emre YAMAN">
+                    <h2 class="h4">Akif Emre YAMAN</h2>
+                    <p>Öğrenci</p>
+                    <p><a href="mailto:akif.yaman@ogr.sakarya.edu.tr">akif.yaman@ogr.sakarya.edu.tr</a></p>
+                </div>
+                <div class="col-md-8">
+                    <article class="mb-4">
+                        <h2 class="h5">Kısaca Akif</h2>
+                        <p>Merhaba. Ben Sakarya Üniversitesinde öğrenim gören bir mühendislik öğrencisiyim. Hayatımın bu aşamasında kodlama çalışarak ve spor yaparak günlerimi geçiriyorum. Gelecekte fazla kendimi geliştirmeyi umuyorum.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-4">Eğitim</h2>
+            <article class="mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Bilgisayar Mühendisliği, Sakarya Üniversitesi</h3>
+                        <p class="card-text">Devam etmekte (2. sınıf)</p>
+                        <p class="card-text">Hayatımın eğitim anlamında en önemli senelerini burada geçirmekteyim.</p>
+                    </div>
+                </div>
+            </article>
+            <article class="mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Adapazarı Anadolu İmam Hatip Lisesi</h3>
+                        <p class="card-text">2017-2021</p>
+                        <p class="card-text">Lise eğitimimi geçirdiğim bu lise bana üniversite için ihtiyacım olacak her şeyi öğretti.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section>
+            <h2 class="h4 mb-4">Yetenekler</h2>
+            <article class="mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> HTML, CSS, JavaScript</li>
+                            <li><i class="fas fa-check"></i> C, C++, C#</li>
+                            <li><i class="fas fa-check"></i> Analitik Düşünme</li>
+                            <li><i class="fas fa-check"></i> Problem Çözme</li>
+                            <li><i class="fas fa-check"></i> Ekip çalışması</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer text-white text-center py-4">
+        <p>&copy; Created by Akif Emre YAMAN</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

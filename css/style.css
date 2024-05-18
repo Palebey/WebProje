@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 4rem 0;
+}
+
+.container h1, .container h2, .container h3, .container h4, .container h5 {
+    margin-top: 20px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+    color: #465668;
+}
+
+.list-unstyled li {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #2072c4;
+    color: white;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+}
+
+footer .social-icons a:hover {
+    color: #007bff;
+}
+
+img.rounded-circle {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body ul {
+    padding-left: 20px;
+}
+
+.card-body ul li {
+    margin-bottom: 10px;
+}
