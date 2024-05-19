@@ -24,70 +24,61 @@
                 <textarea class="form-control" id="message" v-model="formData.message"></textarea>
             </div>
             <div class="form-group">
-                <label for="subject">Konu</label>
-                <select class="form-control" id="subject" v-model="formData.subject">
-                    <option value="" disabled selected>Seçiniz</option>
-                    <option>Genel</option>
-                    <option>Destek</option>
-                    <option>Satış</option>
-                </select>
+                <br>
+<<<<<<< HEAD
+                <input type="radio" id="onlisans" value="Önlisans" v-model="formData.selectedOption">
+                <label for="onlisans">Önlisans</label><br>
+                <input type="radio" id="lisans" value="Lisans" v-model="formData.selectedOption">
+                <label for="lisans">Lisans</label><br>
+                <input type="radio" id="yüksek-lisans" value="Yüksek Lisans" v-model="formData.selectedOption">
+                <label for="yüksek-lisans">Yüksek Lisans</label><br>
+                <br>
+                <input type="checkbox" id="sakarya-checkbox" v-model="formData.sakaryaStudent">
+                <label for="sakarya-checkbox">Sakarya'da okuyanlar işaretlesin</label>
+=======
+                <b>Eğitim Durumunuzu Seçiniz :</b> <br>
+                <input type="radio" name="okul[]" id="okul1" value="Ön Lisans">Önlisans  <br>
+                <input type="radio" name="okul[]" id="okul2" value="Lisans">Lisans <br>
+                <input type="radio" name="okul" id="okul3" value="Yüksek Lisans">Yüksek Lisans
+                <br>
+                <br>
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
+              </div>
+              
+              <div>
+              
+                <br>
+              
+                <b> Okuduğunuz Üniversiteyi Seçiniz (Sadece Sakarya'da okuyanlar işaretlemeli): </b> <br>
+                  
+<<<<<<< HEAD
+                <select name="university" v-model="formData.university">
+                  <option value="" v-model="formData.university">-</option>
+                  <option value="Sakarya Üniversitesi" v-model="formData.university">Sakarya Üniversitesi</option>
+                  <option value="Sakarya Uyg. Bil. Üniversitesi" v-model="formData.university">Sakarya Uyg.Bil.Üniversitesi</option>
+=======
+                <select name="universiteler" v-model="formData.universiteler">
+                  <option value="" v-model="formData.universiteler">-</option>
+                  <option value="Sakarya Üniversitesi" v-model="formData.universiteler">Sakarya Üniversitesi</option>
+                  <option value="Sakarya Uyg. Bil. Üniversitesi" v-model="formData.universiteler">Sakarya Uyg.Bil.Üniversitesi</option>
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
+                  
+                 </select>
             </div>
+            <div>
+               
+              
+                      <br>
+                      <br>
+              
+              </div>
             <button type="submit" class="btn btn-primary">Gönder</button>
             <button type="button" class="btn btn-secondary" @click="resetForm">Temizle</button>
         </form>
     </div>
 
-    <script>
-        new Vue({
-            el: '#app',
-            data: {
-                formData: {
-                    name: '',
-                    email: '',
-                    message: '',
-                    subject: ''
-                }
-            },
-            methods: {
-                handleSubmit() {
-                    if (this.validateForm()) {
-                        localStorage.setItem('formData', JSON.stringify(this.formData));
-                        window.location.href = 'form-data.html';
-                    }
-                },
-                resetForm() {
-                    this.formData = {
-                        name: '',
-                        email: '',
-                        message: '',
-                        subject: ''
-                    };
-                },
-                validateForm() {
-                    if (!this.formData.name) {
-                        alert('Adınızı giriniz.');
-                        return false;
-                    }
-                    if (!this.formData.email || !this.validateEmail(this.formData.email)) {
-                        alert('Geçerli bir email adresi giriniz.');
-                        return false;
-                    }
-                    if (!this.formData.message) {
-                        alert('Mesajınızı giriniz.');
-                        return false;
-                    }
-                    if (!this.formData.subject) {
-                        alert('Bir konu seçiniz.');
-                        return false;
-                    }
-                    return true;
-                },
-                validateEmail(email) {
-                    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    return re.test(email);
-                }
-            }
-        });
+    <script src="js/contact.js">
+
     </script>
 </body>
 </html>

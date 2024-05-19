@@ -8,11 +8,12 @@ if ($_POST) {
     $passwordKey = "b221210003";
 
     if ($username == $usernameKey && $password == $passwordKey) {
-        // Başarılı giriş durumunda
+        
         echo "<h1>Hoşgeldiniz $username</h1>";
+        header("refresh:3 ; url= ../about.html");
     } else {
         // Başarısız giriş durumunda
         echo "<h1>Hatalı kullanıcı adı veya şifre. Lütfen tekrar deneyin.</h1>";
-        echo "<a href='../login.html'>Login Sayfasına Dön</a>";
+        header("refresh:3 ; url= ../login.html");
     }
 }
