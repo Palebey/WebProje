@@ -1,5 +1,6 @@
 function SakaGetir(){
 <<<<<<< HEAD
+<<<<<<< HEAD
     const jokeApiUrl = 'https://official-joke-api.appspot.com/random_joke';
     const translateApiUrl = 'https://libretranslate.de/translate';
 
@@ -37,6 +38,8 @@ function SakaGetir(){
         }
     });
 =======
+=======
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
     const settings = {
     async: true,
     crossDomain: true,
@@ -47,5 +50,8 @@ function SakaGetir(){
 $.ajax(settings).done(function (response) {
     $("#saka").text(response.punchline);
 });
+<<<<<<< HEAD
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
+=======
 >>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
 }

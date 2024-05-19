@@ -6,9 +6,12 @@ new Vue({
             email: '',
             message: '',
 <<<<<<< HEAD
+<<<<<<< HEAD
             selectedOption: '',
             university: '',
             sakaryaStudent: false
+=======
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
 =======
 >>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
     
@@ -24,12 +27,18 @@ new Vue({
         resetForm() {
             this.formData = {
 <<<<<<< HEAD
+<<<<<<< HEAD
             name: '',
             email: '',
             message: '',
             selectedOption: '',
             university: '',
             sakaryaStudent: false
+=======
+                name: '',
+                email: '',
+                message: '',
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
 =======
                 name: '',
                 email: '',
@@ -52,6 +61,7 @@ new Vue({
                 return false;
             }
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!this.formData.selectedOption) {
                 alert('Lütfen bir eğitim seviyesi seçin.');
                 return;
@@ -60,6 +70,8 @@ new Vue({
                 alert('Üniversite bilgisini giriniz.');
                 return false;
             }
+=======
+>>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
 =======
 >>>>>>> 0430bccebc594ae93253509c18a19e9a98e71e97
          
